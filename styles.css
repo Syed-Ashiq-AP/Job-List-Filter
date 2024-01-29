@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan", sans-serif;
+    transition: all 0.3s ease;
+}
+
+body,html{
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(180, 52%, 96%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    justify-content: space-between;
+}
+
+.top-bar{
+    width: 100vw;
+    background:  url('./images/bg-header-desktop.svg') , hsl(180, 29%, 50%);
+    height: 156px;
+    background-size: cover;
+    position: relative;
+}
+
+.filter-bar{
+    width: 78vw;
+    position: absolute;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 20px 10px hsla(180, 29%, 50%, 0.1);
+    border-radius: 5px;
+    bottom: -35px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.filters{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    color:hsl(180, 29%, 50%);
+}
+
+.filter{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color:hsl(180, 31%, 95%);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.f-t{
+    padding: 6px 8px 5px;
+}
+
+.btn{
+    margin-left: 10px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25px;
+    background-color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(180, 14%, 20%);
+}
+
+.clear span{
+    text-decoration: underline;
+    color: hsl(180, 14%, 20%);
+    cursor: pointer;
+}
+
+.clear span:hover{
+    
+    color:hsl(180, 29%, 50%);
+}
+
+.container{
+    width: 85vw;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.company{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 90%;
+    padding: 3%;
+    box-shadow: 0px 0px 20px 10px hsla(180, 29%, 50%, 0.1);
+    border-radius: 8px;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.lt{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.ht{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 10px;
+    min-width: 75%;
+}
+
+.tht{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.c-name{
+    font-size: 1.3vw;
+    font-weight: 600;
+    color: hsl(180, 29%, 50%);
+}
+
+.c-new{
+    padding: 7px 10px 5px;
+    font-size: 1vw;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(180, 29%, 50%);
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 10px;
+    display: none;
+}
+
+
+.c-featured{
+    padding: 7px 10px 5px;
+    font-size: 1vw;
+    font-weight: 600;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(180, 14%, 20%);
+    border-radius: 50px;
+    text-align: center;
+    margin-left: 8px;
+    display: none;
+}
+
+h2{
+    font-size: 1.5vw;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h2:hover{
+    
+    color: hsl(180, 29%, 50%);
+}
+
+.bht{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2vw;
+    font-weight: 500;
+    color: hsl(180, 8%, 52%);
+    width: inherit;
+    margin-top: 4px;
+}
+
+dot{
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: hsl(180, 28%, 81%);
+
+}
+
+.rt{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+}
+
+.rt span{
+    padding: 8px 8px 7px;
+    background-color: #f2faf9;
+    border-radius: 5px;
+    font-weight: 600;
+    color: hsl(180, 29%, 50%);
+    cursor: pointer;
+}
+
+.rt span:hover{
+    background-color:#59a8a7;
+    color: white;
+}
+
+.vim{
+    display: block;
+}
+
+
+.vop{
+    opacity: 1;
+    pointer-events: all;
+}
+
+f-cc{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 4px;
+    background-color: hsl(180, 29%, 50%);
+    top: 0;
+    left: 0;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+@media only screen and (width < 1000px){
+    body,html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+
+    .top-bar{
+        background: url('./images/bg-header-mobile.svg') , hsl(180, 29%, 50%)!important;
+        background-size: cover;
+    }
+
+    .container{
+        width: 90vw;
+    }
+
+    .company{
+        flex-direction: column;
+        padding-left: 4%;
+        align-items: flex-start;
+        position: relative;
+        margin-top: 5%;
+    }
+
+    .lt{
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .ht{
+        width: 90%;
+    }
+
+    .lt img{
+        position: absolute;
+        top:-25px;
+        width: 50px;
+    }
+
+    .c-name{
+        font-size: 15px;
+    }
+
+    .c-new,.c-featured{
+        font-size: 12px;
+    }
+
+    .bht{
+        width: fit-content;
+        font-size: 15px;
+        gap: 10px;
+    }
+
+    h2{
+        font-size: 15px;
+
+    }
+
+    .hl{
+        width: 100%;
+        height: 1px;
+        background-color: #c9c9c9;
+        margin-top: 2%;
+        margin-bottom: 4%;
+    }
+
+    .rt{
+        width: inherit;
+        height: auto;
+        flex-wrap: wrap;
+        padding-left: 2%;
+    }
+    
+}
