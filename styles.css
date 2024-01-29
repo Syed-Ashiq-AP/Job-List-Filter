@@ -114,6 +114,7 @@ body,html{
     border-radius: 8px;
     justify-content: space-between;
     background-color: white;
+    position: relative;
 }
 
 .lt{
